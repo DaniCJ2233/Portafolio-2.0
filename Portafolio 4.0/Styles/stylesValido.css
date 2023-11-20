@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arvo', serif;
+    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+:root {
+    --ColorTitulo: color white;
+    --FuenteTitulo: font-size:900%;
+}
+
+.navbar {
+    background-color: transparent;
+    position: absolute;
+    height: 10vh;
+    width: 90%;
+    left: 5%;
+    z-index: 1;
+    box-shadow: 0px 75px 1px -57px rgba(0, 0, 0, 0.1);
+
+}
+
+.flex-container-1 {
+    background-color: rgba(255, 255, 255, 0.764);
+    box-shadow: 0px 0px 2px 0px black;
+    z-index: 0;
+    height: 80vh;
+    width: 40%;
+    position: relative;
+    top: 2rem;
+    border-radius: .5rem;
+    border-width: 5px;
+    border-color: black;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+.portada {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+}
+
+.google {
+    background-image: url(pngegg.png);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    top: 1rem;
+    height: 20vh;
+    width: 40%;
+    z-index: 2;
+}
+
+.titulo {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 700%;
+    left: 27.5%;
+    height: 1.5rem;
+    width: 17rem;
+    font-size: 180%;
+    font-weight: 200;
+}
+
+.etiqueta-contraseña {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 5rem;
+    width: 50%;
+    left: 8rem;
+    text-align: left;
+    font-size: 100%;
+    padding: 1rem 5rem 1rem 1rem;
+    color: transparent;
+    outline: none;
+}
+
+.input-contraseña {
+    position: relative;
+    top: 10%;
+    left: -5%;
+    width: 24rem;
+    border-width: 0.2px;
+    padding: 1rem 2rem 1rem 1rem;
+    outline: none;
+    border-radius: .2rem;
+    transition: box-shadow 0.1s;
+
+}
+
+#input::placeholder {
+
+    font-weight: 500;
+}
+
+.pregunta-contraseña {
+    position: absolute;
+    color: rgb(6, 112, 241);
+    top: 74%;
+    left: 18%;
+    font-size: 90%;
+    text-decoration: none;
+}
+
+#mostrarContraseña {
+    position: absolute;
+    top: 20.5rem;
+    left: 7.2rem;
+    height: 20px; /* Altura del checkbox */
+    width: 20px; /* Ancho del checkbox */
+    background-color: #ffffff;
+    border: 2px solid #aaa;
+    border-radius:4px;
+    cursor: pointer;
+}
+
+#mostrarContraseña:hover {
+  background-color: grey;
+  padding: .5rem;
+  transition: background-color 0.5 ease;
+}
+
+#label-mostrarContraseña {
+    position: absolute;
+    top: 20.5rem;
+    left: 9rem;
+    font-size: 85%;
+}
+
+.boton {
+    display: flex;
+    position: relative;
+    top: 190%;
+
+}
+
+
+.siguiente {
+    background-color: rgb(6, 112, 241);
+    border: none;
+    height: 2rem;
+    line-height: .02rem;
+    border-radius: .3rem;
+    position: relative;
+    right: -24rem;
+    top: -2.6rem;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 90%;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.siguiente:hover {
+    background-color: rgb(8, 77, 161);
+    box-shadow: -1px 1px 3px 0px rgb(90, 90, 90);
+    transition: box-shadow .3s ease-in;
+}
+
+
+.flex-container-2 {
+    font-size: 95%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    top: 3.5rem;
+    left: 45.5rem;
+    width: 10rem;
+}
+
+.flex-container-2 a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+    left: -80%;
+    width: 400%;
+    font-size: 90%;
+
+}
+
+.select-trigger {
+    cursor: pointer;
+    padding: 1rem 1rem 1rem;
+    border-radius: 5px;
+    position: relative;
+    left: 2rem;
+}
+
+.options-container {
+    position: absolute;
+    bottom: 100%;
+    left: 2rem;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    max-height: 30rem;
+    border-radius: 0 0 5px 5px;
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.option {
+    background-color: #ffffff;
+    width: 100%;
+    font-size: 80%;
+    padding: 0.8rem 5rem 0.8rem .5rem;
+    cursor: pointer;
+    transition: background-color .09s ease;
+    border-radius: 5px 5px 5px 5px;
+    z-index: 2;
+}
+
+.option:hover {
+    background-color: #f4f3f3;
+}
+
+
+
+.bad {
+    position: relative;
+    font-weight: 300;
+    top: -28rem;
+    left: 10rem;
+    width: 35vh;
+    font-size: 70%;
+    color: red;
+}

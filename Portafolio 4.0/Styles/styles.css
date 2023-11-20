@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arvo', serif;
+    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+:root {
+    --ColorTitulo: color white;
+    --FuenteTitulo: font-size:900%;
+}
+
+.navbar {
+    background-color: transparent;
+    position: absolute;
+    height: 10vh;
+    width: 90%;
+    left: 5%;
+    z-index: 1;
+    box-shadow: 0px 75px 1px -57px rgba(0, 0, 0, 0.1);
+
+}
+
+.flex-container-1 {
+    background-color: rgba(255, 255, 255, 0.764);
+    box-shadow: 0px 0px 2px 0px black;
+    z-index: 0;
+    height: 80vh;
+    width: 40%;
+    position: relative;
+    top: 2rem;
+    border-radius: .5rem;
+    border-width: 5px;
+    border-color: black;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+.portada {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+}
+
+.google {
+    background-image: url(pngegg.png);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    top: 1rem;
+    height: 20vh;
+    width: 40%;
+    z-index: 2;
+}
+
+.titulo {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 700%;
+    left: 30.3%;
+    height: 1.5rem;
+    width: 17rem;
+    font-size: 180%;
+    font-weight: 200;
+}
+
+.etiqueta-correo {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 5rem;
+    width: 50%;
+    left: 8rem;
+    text-align: left;
+    font-size: 100%;
+    padding: 1rem 5rem 1rem 1rem;
+    color: transparent;
+    outline: none;
+}
+
+.input-correo {
+    position: relative;
+    top: 10%;
+    left: -2%;
+    width: 24rem;
+    border-width: 0.2px;
+    padding: 1rem 2rem 1rem 1rem;
+    outline: none;
+    border-radius: .2rem;
+    transition: box-shadow 0.1s;
+
+}
+
+<<<<<<< HEAD
+#input::placeholder {
+
+    font-weight: 500;
+}
+
+=======
+input:-webkit-autofill {
+    box-shadow: 0 0 0 1000px white inset !important;
+}
+
+
+.placeholder {
+    position: absolute;
+    top: 46.5%;
+    left: 23%;
+    font-size: 93%;
+    font-weight: 100;
+    color: rgb(61, 60, 60);
+    padding: .5rem .5rem .5rem .5rem;
+    display: inline-block;
+    transition: all 0.098s ease-out;
+}
+
+
+>>>>>>> 83abd81 (Google registro 4.0)
+.pregunta-correo {
+    position: absolute;
+    color: rgb(6, 112, 241);
+    top: 56%;
+    left: 21.5%;
+    font-size: 90%;
+    text-decoration: none;
+<<<<<<< HEAD
+=======
+    list-style: none;
+    outline: none;
+>>>>>>> 83abd81 (Google registro 4.0)
+}
+
+.texto-2 {
+    font-size: 90%;
+    top: 69%;
+    z-index: 3;
+    height: 10vh;
+<<<<<<< HEAD
+    width: 100%;
+    color: rgb(102, 100, 100);
+    font-weight: 900;
+    position: absolute;
+    padding: 0rem 7rem 0rem 7rem;
+    text-align: left;
+    justify-content: flex-start;
+    bottom: 8rem;
+    left: 1.2rem;
+}
+
+.mas-informacion {
+    text-decoration: none;
+    color: rgb(6, 112, 241);
+    font-weight: bolder;
+=======
+    width: 60%;
+    color: rgb(102, 100, 100);
+    font-weight: 900;
+    position: absolute;
+    text-align: left;
+    justify-content: flex-start;
+    bottom: 8rem;
+    left: 8.2rem;
+}
+
+.mas-informacion {
+    position: absolute;
+    top: 25.45rem;
+    left: 21.7rem;
+    text-decoration: none;
+    font-size: 90%;
+    color: rgb(6, 112, 241);
+    font-weight: bolder;
+    cursor: pointer;
+>>>>>>> 83abd81 (Google registro 4.0)
+}
+
+.botones {
+    display: flex;
+    position: relative;
+    top: 250%;
+<<<<<<< HEAD
+    
+}
+
+.crear-cuenta {
+=======
+
+}
+
+.crear-cuenta {
+    width: 11rem;
+>>>>>>> 83abd81 (Google registro 4.0)
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 90%;
+    margin: 1rem;
+    padding: 0rem 1rem 0rem 1rem;
+    font-weight: 400;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: none;
+    color: rgb(6, 112, 241);
+    cursor: pointer;
+    position: relative;
+<<<<<<< HEAD
+    left: -1.7rem;
+    top: -2.5rem;
+=======
+    top: -4rem;
+    right: -34rem;
+>>>>>>> 83abd81 (Google registro 4.0)
+    text-align: center;
+}
+
+.crear-cuenta:hover {
+<<<<<<< HEAD
+    background-color: rgba(175, 216, 247, 0.105);
+    color: rgb(8, 77, 161);
+    
+=======
+    background-color: rgba(66, 108, 139, 0.105);
+    color: rgb(8, 77, 161);
+
+>>>>>>> 83abd81 (Google registro 4.0)
+}
+
+.siguiente {
+    background-color: rgb(6, 112, 241);
+    border: none;
+    height: 2rem;
+    line-height: .02rem;
+    border-radius: .3rem;
+    position: relative;
+    right: -25.3rem;
+    top: -2.6rem;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 90%;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.siguiente:hover {
+    background-color: rgb(8, 77, 161);
+    box-shadow: -1px 1px 3px 0px rgb(90, 90, 90);
+    transition: box-shadow .3s ease-in;
+}
+
+
+.flex-container-2 {
+    font-size: 95%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+<<<<<<< HEAD
+    top: 3.5rem;
+=======
+    top: -1rem;
+>>>>>>> 83abd81 (Google registro 4.0)
+    left: 45.5rem;
+    width: 10rem;
+}
+
+.flex-container-2 a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+    left: -80%;
+    width: 400%;
+    font-size: 90%;
+<<<<<<< HEAD
+    
+  }
+
+  .select-trigger {
+    cursor: pointer;
+    padding: 1rem 1rem 1rem;
+    border-radius: 5px;
+    position: relative;
+    left: 2rem;
+  }
+
+  .options-container {
+=======
+
+}
+
+.select-trigger {
+    text-overflow: ellipsis;
+    cursor: pointer;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 5px;
+    justify-content: center;
+    position: relative;
+    left: .5rem;
+   
+}
+
+.options-container {
+>>>>>>> 83abd81 (Google registro 4.0)
+    position: absolute;
+    bottom: 100%;
+    left: 2rem;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    max-height: 30rem;
+    border-radius: 0 0 5px 5px;
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+<<<<<<< HEAD
+  }
+
+  .option{
+    background-color: #ffffff;
+    width: 100%;
+    font-size: 80%;
+    padding: 0.8rem 5rem 0.8rem .5rem;
+    cursor: pointer;
+    transition: background-color .09s ease;
+    border-radius:  5px 5px 5px 5px;
+    z-index: 2;
+  }
+
+  .option:hover {
+    background-color: #f4f3f3;
+  }
+
+  #desencadenante {
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    left: -1.7rem;
+  }
+
+  .opciones-contenedor {
+    text-size-adjust: calc(50%)40%;
+    position: absolute;
+    bottom: 135%;
+    left: 19%;
+    width: 35%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    max-height: 30rem;
+=======
+}
+
+.option {
+    background-color: #ffffff;
+    width: 100%;
+    font-size: 80%;
+    padding: 0.8rem 1rem 0.8rem .5rem;
+    cursor: pointer;
+    transition: background-color .09s ease;
+    border-radius: 5px 5px 5px 5px;
+    z-index: 2;
+}
+
+.option:hover {
+    background-color: #f4f3f3;
+}
+
+#desencadenante {
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+}
+
+.opciones-contenedor {
+    text-size-adjust: calc(50%)40%;
+    position: absolute;
+    top: 52.2%;
+    left: 35.5%;
+    width: 15.2%;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.329);
+    border: 1px solid #cccccc;
+    max-height: 30rem;
+    max-width: 25%;
+>>>>>>> 83abd81 (Google registro 4.0)
+    border-radius: 0 0 5px 5px;
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+<<<<<<< HEAD
+    transition: opacity 0.3s ease-in-out;
+    z-index: 3;
+  }
+
+  .option-2 {
+    background-color: #ffffff;
+    width: 100%;
+    font-size: 100%;
+    padding: 1rem .5rem 1rem .5rem;
+    cursor: pointer;
+    transition: background-color .1s ease;
+    z-index: 2;
+    text-align: left;
+  }
+
+  .option-2:hover {
+    background-color: #f4f3f3;
+  }
+
+=======
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+.conenedorSelect {
+    position: relative;
+
+}
+
+.options {
+    background-color: #ffffff;
+    width: 100%;
+    font-size: 100%;
+    padding: 0.8rem .5rem 0.8rem 1rem;
+    cursor: pointer;
+    transition: background-color .09s ease;
+    z-index: 2;
+}
+
+.options:hover {
+    background-color: #f4f3f3;
+}
+
+.bad {
+    position: relative;
+    font-weight: 300;
+    top: -28rem;
+    left: 10rem;
+    width: 35vh;
+    font-size: 70%;
+    color: red;
+}
+
+.texto-traducir {
+    writing-mode: horizontal-tb; /* Establece el modo de escritura a horizontal (de izquierda a derecha) */
+  }
+>>>>>>> 83abd81 (Google registro 4.0)
