@@ -1,4 +1,5 @@
 <?php
+ob_start();
 include('con_db.php');
 
 if ($conex) {
@@ -7,26 +8,28 @@ if ($conex) {
     echo "Error en la conexión: " . mysqli_connect_error();
 }
 
-if(isset($_POST['register'])){
-    if ( (strlen($_POST['email']))>= 1){
+if (isset($_POST['register'])) {
+    if ((strlen($_POST['email'])) >= 1) {
         $email = trim($_POST['email']);
         $fechareg = date("d/m/y");
-        $consulta = "INSERT INTO datos(email,fecha_reg) VALUES ('$email','$fechareg')";
 
-        $resultado = mysqli_query($conex,$consulta);
-        if ($resultado) {
+        // Verificar si el correo electrónico ya existe en la base de datos
+        $consulta_existencia = "SELECT * FROM datos WHERE email = '$email'";
+        $resultado_existencia = mysqli_query($conex, $consulta_existencia);
+
+        if (mysqli_num_rows($resultado_existencia) > 0) {
+            // El correo electrónico ya existe, puedes manejarlo según tus necesidades
             ?>
-            <h3 class="ok">Te has inscripto correctamente</h3>;
+            <meta http-equiv="refresh" content="2;url=registroValido.php">
             <?php
-        }else {
+            exit();
+        } else {  // El correo electronico no existe, procedemos a bloquear el inicio de sesion
             ?>
-            <h3 class="bad"></h3>Ups! Ha ocurrido un error!</h3>
+            <meta http-equiv="refresh" content="2;url=registroInvalido.php">
             <?php
+            exit();
         }
-    }else {
-        ?>
-        <h3 class="bad"></h3>Por favor, complete los datos solicitados</h3>
-        <?php
     }
 }
+ob_end_flush();
 ?>
